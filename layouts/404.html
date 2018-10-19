@@ -1,5 +1,5 @@
 {{ define "title" }}
-	Page Not Found
+	Ops! Page Not Found
 {{ end }}
 
 {{ define "frontmenu" }}
@@ -15,7 +15,7 @@
 					{{ if fileExists "/content/404.md" }}
 						{{ readFile "/content/404.md" | markdownify | emojify }}
 					{{ else }}
-						<h1>Error 404: Page Not Found</h1><hr>
+						<h1>Ops! Error 404: Page Not Found</h1><hr>
 						<h4>It seems that the page that you're trying to access doesn't exist. {{ ":worried:" | emojify }}</h4>
 						<h4>If you're sure that it exists, chances are it might have been moved to a new link! You may search for it on the home page.</h4>
 					{{ end }}
